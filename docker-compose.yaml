@@ -1,0 +1,17 @@
+version: '3'
+services:
+  node:
+    image: node:16
+    container_name: node_sand_box
+    environment:
+      - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:./node_modules/.bin
+    ports:
+      - 8080:3000
+      - 6006:6006
+    volumes:
+      - ./:/usr/src/app
+    working_dir: /usr/src/app
+    command: >
+      sh -c '
+        npm start
+      '
