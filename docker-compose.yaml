@@ -2,7 +2,7 @@ version: '3'
 services:
   node:
     image: node:16
-    container_name: node_sand_box
+    container_name: react_18_rc
     environment:
       - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:./node_modules/.bin
     ports:
