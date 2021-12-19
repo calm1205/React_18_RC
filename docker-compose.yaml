@@ -6,8 +6,7 @@ services:
     environment:
       - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:./node_modules/.bin
     ports:
-      - 8080:3000
-      - 6006:6006
+      - 1818:3000
     volumes:
       - ./:/usr/src/app
     working_dir: /usr/src/app

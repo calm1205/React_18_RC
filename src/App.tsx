@@ -1,10 +1,11 @@
 import { ThemeProvider } from 'src/Theme';
-import { Button as OrgButton } from 'src/components/atoms';
+import Batch from 'src/components/batch/Batch';
 
 const App = () => {
   return (
     <ThemeProvider>
-      <OrgButton>original</OrgButton>
+      <h1>batching</h1>
+      <Batch />
     </ThemeProvider>
   );
 };
